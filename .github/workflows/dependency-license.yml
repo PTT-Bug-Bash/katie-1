@@ -154,7 +154,7 @@ jobs:
           done
 
       - name: Upload Results
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: scan-results
           path: dependency_data_${{ github.event.pull_request.head.sha }}__threshold_${{ env.LICENSE_POLICY_THRESHOLD }}.json
